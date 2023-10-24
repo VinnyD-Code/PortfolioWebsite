@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e838e778-a87a-4071-9d2b-630ba4fb0740" name="Changes" comment="" />
+    <list default="true" id="e838e778-a87a-4071-9d2b-630ba4fb0740" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/css/coolblackThemed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/guyCoding.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/guyCoding.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/laptop2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/pc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/test.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/sanofi.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/sanofi2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/sql.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/sql2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/submit_form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,8 +41,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/vince/Downloads/PortfolioWebsite-main",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/vince/Downloads/PortfolioWebsite-main/css",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -38,8 +53,12 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\vince\Downloads\PortfolioWebsite-main\css" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\vince\Downloads\PortfolioWebsite-main\img" />
+      <recent name="C:\Users\vince\Downloads\PortfolioWebsite-main\css" />
       <recent name="C:\Users\vince\Downloads\PortfolioWebsite-main\java" />
     </key>
   </component>
@@ -53,6 +72,7 @@
       <updated>1698105288619</updated>
       <workItem from="1698105289569" duration="109000" />
       <workItem from="1698105419441" duration="3843000" />
+      <workItem from="1698109307093" duration="7963000" />
     </task>
     <servers />
   </component>

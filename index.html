@@ -29,6 +29,7 @@
             <nav class="navbar">
                 <a href="#home" class="active">Home</a>
                 <a href="#about">About</a>
+                <a href="#education">Journey</a>
                 <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
@@ -50,17 +51,14 @@
                 </p>
 
                 <div class="btn-box">
-                    <a href="#" class="btn">Hire Me</a>
-                    <a href="#" class="btn">Let's Talk</a>
+                    <a href="https://drive.google.com/file/d/1aTj0hUrBaDw3tV2mTsX12vtyF8oIGyGs/view?usp=sharing" class="btn">My Resume</a>
+                    <a href="#contact" class="btn">Let's Talk</a>
                 </div>
             </div>
 
             <div class="home-sci">
                 <a href="https://www.linkedin.com/in/vincent-dinh-b7aa7a223/"><i class='bx bxl-linkedin'></i></a>
                 <a href="https://github.com/VinnyD-Code"><i class='bx bxl-github' ></i></a>
-            </div>
-            <div class="profile-img">
-                <img src="./img/laptop.jpg" alt="">
             </div>
         </section>
 
@@ -98,8 +96,14 @@
                         <div class="education-content">
                             <div class="content">
                                 <div class="year"><i class='bx bx-calendar'></i> 2021 - 2025</div>
-                                <h3>Bachelors of Science in Computer Science - Baylor University</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur cupiditate, delectus, dicta, in ipsum iste labore maiores nam nostrum quam quo sint vitae. Atque quod repudiandae totam vel veritatis.</p>
+                                <h3>Bachelor of Science in Computer Science - Baylor University</h3>
+                                <p>Majoring in Software Engineering with a current GPA of 3.7/4.0. Undertook courses like Data Structures, Software Engineering I, Intro to Data Science, and Databases, equipping me with the foundational and advanced knowledge in the field.</p>
+
+                                <h4>Relevant Achievements:</h4>
+                                <ul>
+                                    <li>Provost Scholar at Baylor University</li>
+                                    <li>Member of the National Honor Society</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -115,9 +119,10 @@
                                 <h3>Data Analyst Intern - Sanofi</h3>
                                 <p>
                                 <ul>
-                                    <li>Assist the data analyst to accomplish the jobs related to harmonizing the meta data</li>
-                                    <li>Compare data sets and prepare for system consumptions</li>
-                                    <li>Prepare presentations and training materials</li>
+                                    <li>Utilized R for data analysis and advanced techniques to extract metadata from large datasets</li>
+                                    <li>Drove informed decision-making and strategic alignment among stakeholders by delivering impactful presentations, resulting in a 20% revenue increase and 15% operational efficiency</li>
+                                    <li>Leveraged Python libraries, creating data pipelines to automate data extraction, transformation, and loading processes, increasing efficiency by 25%.</li>
+                                    <li>Developed complex SQL queries within Snowflake to support A/B testing, enabling data-driven evaluation of feature effectiveness.</li>
                                 </ul>
                                 </p>
                             </div>
@@ -132,11 +137,8 @@
                                 <p>
                                 <ul>
                                     <li>Oversaw all aspects of intramural sports activities and events for a community of over 100 members</li>
-                                    <li>Demonstrated strong organizational and leadership skills by effectively coordinating and managing multiple
-                                        sports tournaments
-                                    </li>
-                                    <li>Implemented new strategies for tournament promotion and outreach, resulting in a 20% increase in
-                                        participant registration and a 10% increase in spectator attendance.</li>
+                                    <li>Demonstrated strong organizational and leadership skills by effectively coordinating and managing multiple sports tournaments</li>
+                                    <li>Implemented new strategies for tournament promotion and outreach, resulting in a 20% increase in participant registration and a 10% increase in spectator attendance.</li>
                                 </ul>
                                 </p>
                             </div>
@@ -228,6 +230,15 @@
                     </div>
                 </div>
 
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <img src="img/sql2.png" alt="">
+                        <h3>SQL</h3>
+                        <p>Designed and implemented complex SQL queries to extract and manipulate large datasets,
+                            optimizing database performance and ensuring accurate data retrieval for business analytics.</p>
+                    </div>
+                </div>
+
             </div>
         </section>
 
@@ -237,16 +248,55 @@
             <hr>
 
             <div class="project">
-                <img src="project-image1.jpg" alt="Project 1">
+                <img src="img/sanofi2.jpeg" alt="Project 1">
                 <div class="project-details">
-                    <h3>Project Title 1</h3>
-                    <p>Short description about the project. What it does, the technologies used, and any other relevant details.</p>
-                    <a href="#" class="btn">View Project</a>
+                    <h3>Data Processing Pipeline for Sanofi Products Matching</h3>
+                    <p>Designed and implemented an optimized data processing pipeline for Sanofi, enhancing
+                        pharmaceutical product matching. Achieved a 50% reduction in processing time, facilitating
+                        quicker decision-making and bolstering data management across the company.</p>
+                    <a href="https://github.com/VinnyD-Code/Data-Processing-Pipeline" class="btn-view">View Project</a>
                 </div>
             </div>
 
             <!-- Repeat similar blocks for other projects -->
         </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2 class="heading">Contact <span>Me</span></h2>
+            <div class="contact-container">
+                <p>If you have any questions or would just like to chat, please feel free to contact me using the form below.</p>
+
+                <form action="submit_form.php" method="post" class="grid-form">
+
+                    <div class="form-group">
+                        <input type="text" id="fname" name="fname" placeholder="First Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+
+                    <div class="form-group message-group">
+                        <textarea id="message" name="message" rows="12" placeholder="Your Message" required></textarea>
+                    </div>
+
+                    <div class="form-btn">
+                        <button type="submit" class="btn">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+
 
         <script>
             // Function to update the active state of the navbar links
