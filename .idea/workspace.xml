@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e838e778-a87a-4071-9d2b-630ba4fb0740" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/css/coolblackThemed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/guyCoding.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/guyCoding.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/laptop2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/pc.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/test.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/sanofi.jfif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/sanofi2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/sql.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/sql2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/submit_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/codingguy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/etl.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
@@ -36,22 +27,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/vince/Downloads/PortfolioWebsite-main/css",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/vince/Downloads/PortfolioWebsite-main/css&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\vince\Downloads\PortfolioWebsite-main\css" />
@@ -72,7 +63,8 @@
       <updated>1698105288619</updated>
       <workItem from="1698105289569" duration="109000" />
       <workItem from="1698105419441" duration="3843000" />
-      <workItem from="1698109307093" duration="7963000" />
+      <workItem from="1698109307093" duration="8164000" />
+      <workItem from="1698204985575" duration="950000" />
     </task>
     <servers />
   </component>

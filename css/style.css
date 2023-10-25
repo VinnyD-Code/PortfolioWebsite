@@ -118,7 +118,7 @@ section {
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background: url('test.png') no-repeat right;
+    background: url('codingguy.png') no-repeat right;
     background-size: clamp(100px, 50%, 1000px) auto;
     background-position: 800px center;
     -webkit-background-size: clamp(100px, 40%, 1000px) auto;
@@ -599,7 +599,7 @@ span {
 
 .project img {
     flex: 1; /* Takes 1 portion of the available space */
-    max-width:42%; /* Limit the image width */
+    max-width:28%; /* Limit the image width */
     height: auto;
 }
 
