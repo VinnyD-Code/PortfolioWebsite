@@ -603,9 +603,21 @@ span {
     height: auto;
 }
 
+.project .proj2 {
+    flex: 1; /* Takes 1 portion of the available space */
+    max-width:28%; /* Limit the image width */
+    height: auto;
+}
+
+.project .proj3 {
+    flex: 1; /* Takes 1 portion of the available space */
+    max-width:28%; /* Limit the image width */
+    min-height: 100%;
+}
+
 .project-details {
     flex: 2; /* Takes 2 portions of the available space */
-    padding: 2rem;
+    padding: 2.2rem;
     background-color: var(--second-bg-color);
 }
 
