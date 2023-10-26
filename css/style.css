@@ -345,6 +345,27 @@ span {
     border: .2rem solid var(--main-color);
 }
 
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+#animated-text {
+    white-space: nowrap;
+}
+
+#animated-text:after {
+    content: '|';
+    font-weight: normal;
+    animation: blink 0.7s infinite;
+}
+
 /*My Journey*/
 .education {
     display: flex;

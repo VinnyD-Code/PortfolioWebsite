@@ -43,7 +43,7 @@
             <div class="home-text">
                 <h1>Hi, I'm <span>Vincent Dinh</span></h1>
                 <div class="text-animate">
-                    <h3>Full Stack Developer</h3>
+                    <h3 id="animated-text"></h3> <!-- Placeholder for the animated text -->
                 </div>
                 <p>
                     Hardworking individual with a knack for technology. Fullstack developer
@@ -358,6 +358,53 @@
 
             // Initial check
             updateActiveNavLink();
+
+            const textElement = document.querySelector(".text-animate h3");
+            const textToType = "Full Stack Developer";
+            let index = 0;
+
+            function typeText() {
+                if(index < textToType.length) {
+                    textElement.textContent += textToType.charAt(index);
+                    index++;
+                    setTimeout(typeText, 100); // Adjust speed as required. 100ms is fairly quick.
+                } else {
+                    textElement.textContent = textToType; // Once complete, make sure the full text is displayed.
+                }
+            }
+
+            document.addEventListener("DOMContentLoaded", function(event) {
+                let i = 0;
+                const text = "Full Stack Developer";
+                const elem = document.getElementById("animated-text");
+                const speed = 100; // Adjust as needed
+                const pauseDuration = 2000; // 2 seconds, adjust as needed
+                let isDeleting = false;
+
+                function typeWriter() {
+                    if (!isDeleting) {
+                        if (i < text.length) {
+                            elem.textContent += text.charAt(i);
+                            i++;
+                        } else {
+                            // Once text is typed out, set a delay for starting deletion
+                            setTimeout(() => { isDeleting = true; typeWriter(); }, pauseDuration);
+                            return;
+                        }
+                    } else {
+                        if (i > 0) {
+                            elem.textContent = text.substring(0, i-1);
+                            i--;
+                        } else {
+                            // Once text is fully deleted, start typing again
+                            isDeleting = false;
+                        }
+                    }
+                    setTimeout(typeWriter, isDeleting ? speed / 2 : speed); // Deleting is faster than typing
+                }
+
+                typeWriter();
+            });
         </script>
     </body>
 </html>
