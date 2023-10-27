@@ -316,6 +316,9 @@ span {
 }
 
 .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
@@ -325,14 +328,13 @@ span {
 
 .about-content p {
     font-size: 1.6rem;
-    margin: 2rem 0 3rem;
+    margin: 2rem auto 3rem; /* adjusted margin */
     width: 75%;
-    margin-left: 130px;
 }
-
 .btn-box.btns {
-    display: inline-block;
-    width: 15%;
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Make it full width to ensure the button inside can be centered */
 }
 
 .btn-box.btns a::before {
@@ -394,6 +396,7 @@ span {
 .education-column .education-box {
     border-left: .2rem solid var(--main-color);
 }
+
 
 .education-box .education-content {
     position: relative;
@@ -866,3 +869,135 @@ form {
 }
 
 
+/* Responsive Media Queries */
+
+/* Medium devices (tablets, around 768px) */
+@media only screen and (max-width: 768px) {
+
+    .skills-row .skills-column, .skills-row .skills-column2 {
+        flex-basis: 100%;  /* Full width */
+        max-width: 100%;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);  /* Adjust grid columns */
+    }
+
+    .skills-content {
+        width: 100%;
+    }
+
+    #contact {
+        padding: 4rem 5%;
+    }
+
+    .contact-container {
+        padding: 1.5rem;
+    }
+
+    .grid-form {
+        grid-template-areas:
+            "fname  fname"
+            "lname  lname"
+            "phone  phone"
+            "email  email"
+            "message  message"
+            "btn    btn";
+    }
+}
+
+/* Small devices (phones, around 576px) */
+@media only screen and (max-width: 576px) {
+
+    #projects {
+        padding: 3rem 5%;
+    }
+
+    .project-details {
+        padding: 1.5rem;
+    }
+
+    .project-details h3 {
+        font-size: 1.5rem;
+    }
+
+    .project-details p {
+        font-size: 1rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;  /* Single column grid for smaller screens */
+    }
+
+    .heading {
+        font-size: 3rem;
+    }
+
+    .form-group label {
+        font-size: 1rem;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="tel"],
+    .form-group textarea {
+        padding: 0.8rem;
+    }
+
+    .btn, .btn-view {
+        font-size: 1.2rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+/* Extra small devices (small phones, less than 400px) */
+@media only screen and (max-width: 400px) {
+
+    .heading {
+        font-size: 2.5rem;
+    }
+
+    .contact-container p, .form-group label {
+        font-size: 1rem;
+    }
+
+    .btn, .btn-view {
+        font-size: 1rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+/* Hide hamburger by default */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    /* other styles */
+}
+
+/* Small Screen (e.g., below 768px) */
+/*@media (max-width: 768px) {*/
+/*    .hamburger {*/
+/*        display: block;*/
+/*    }*/
+
+/*    .navbar {*/
+/*        display: none;*/
+/*        flex-direction: column;*/
+/*        width: 100%;*/
+/*        position: absolute;*/
+/*        top: 100%;  !* position right below the header *!*/
+/*        left: 0;*/
+/*        background-color: #fff;  !* adjust as needed *!*/
+/*        z-index: 999;*/
+/*    }*/
+
+/*    .navbar a {*/
+/*        padding: 15px;  !* adjust as needed *!*/
+/*        display: block;*/
+/*        border-bottom: 1px solid #ccc;  !* adjust as needed *!*/
+/*    }*/
+/*}*/

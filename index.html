@@ -24,7 +24,9 @@
         <header class="header">
             <a href="#" class="logo">Vincent.</a>
 
-            <div class="bx bx-menu" id="menu"></div>
+            <button class="hamburger" id="menu-btn">
+                <div class="bx bx-menu" id="menu"></div>
+            </button>
 
             <nav class="navbar">
                 <a href="#home" class="active">Home</a>
@@ -405,6 +407,18 @@
 
                 typeWriter();
             });
+
+            const menuBtn = document.getElementById('menu-btn');
+            const navbar = document.getElementById('navbar');
+
+            menuBtn.addEventListener('click', function() {
+                if (navbar.style.display === "none" || navbar.style.display === "") {
+                    navbar.style.display = "block";
+                } else {
+                    navbar.style.display = "none";
+                }
+            });
+
         </script>
     </body>
 </html>
