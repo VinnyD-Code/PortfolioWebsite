@@ -420,9 +420,19 @@
                     navbar.classList.add('open');
                 }
             });
-
-
-
+            document.addEventListener('DOMContentLoaded', function() {
+                const skillBoxes = document.querySelectorAll('.skills-content');
+                skillBoxes.forEach(box => {
+                    box.addEventListener('click', function() {
+                        const paragraph = box.querySelector('p');
+                        if (paragraph.classList.contains('active')) {
+                            paragraph.classList.remove('active');
+                        } else {
+                            paragraph.classList.add('active');
+                        }
+                    });
+                });
+            });
 
 
         </script>

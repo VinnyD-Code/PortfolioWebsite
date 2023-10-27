@@ -544,6 +544,10 @@ span {
 .skills-content p {
     font-size: 13px;
     line-height: 1.4;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.4s ease-in-out, opacity 0.3s ease;
 }
 /*fix columns*/
 .skills-row .skills-column2 {
@@ -566,6 +570,7 @@ span {
     flex-direction: column;
     align-items: center;
     text-align: center; /* Center text */
+    cursor: pointer;
 }
 
 .skills-content img {
@@ -578,8 +583,10 @@ span {
     margin: 5px 0; /* Adjust space around the title */
 }
 
-.skills-content p {
-    max-width: 80%; /* Ensure the text does not span the full width to maintain readability */
+
+.skills-content p.active {
+    max-height: 200px; /* Adjust this value based on the expected maximum height of your paragraphs */
+    opacity: 1;
 }
 
 /* Animation when hovering over the skills content */
