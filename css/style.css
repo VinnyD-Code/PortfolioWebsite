@@ -102,11 +102,7 @@ span {
     color: var(--main-color)
 }
 
-.navbar i{
-    font-size: 1.5rem;
-    margin-right: 6px;
-    vertical-align: middle;
-}
+
 
 /*Home section style*/
 section {
@@ -678,7 +674,32 @@ span {
         max-width: 100%;
         margin-bottom: 1rem;
     }
+
+    .project .proj2 {
+        min-width: 100%;  /* Ensure that the image takes at least half the width of its container */
+        height: auto;
+    }
 }
+
+/* Responsive styling for projects */
+@media (max-width: 900px) {
+    .project {
+        flex-direction: column;
+    }
+
+    .project img {
+        min-width: 100%;
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .project .proj2 {
+        min-width: 100%;  /* Ensure that the image takes at least half the width of its container */
+        height: auto;
+    }
+}
+
+
 
 /* Contact Page Styles */
 
@@ -971,33 +992,43 @@ form {
 .hamburger {
     display: none;
     cursor: pointer;
+    background-color:transparent;
 }
 
-.navbar {
-    display: flex;
-    /* other styles */
+
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .navbar {
+        /*display: none;*/
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: -20%;
+        left: 0;
+        z-index: 999;
+        backdrop-filter: blur(5px);
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-out;
+    }
+
+    .navbar.open {
+        transform: translateY(20%); /* Bring the navbar back on-screen */
+    }
+
+
+    .navbar a {
+        padding: 15px;  /* adjust as needed */
+        display: block;
+        border-bottom: 1px solid #ccc;  /* adjust as needed */
+    }
 }
 
-/* Small Screen (e.g., below 768px) */
-/*@media (max-width: 768px) {*/
-/*    .hamburger {*/
-/*        display: block;*/
-/*    }*/
-
-/*    .navbar {*/
-/*        display: none;*/
-/*        flex-direction: column;*/
-/*        width: 100%;*/
-/*        position: absolute;*/
-/*        top: 100%;  !* position right below the header *!*/
-/*        left: 0;*/
-/*        background-color: #fff;  !* adjust as needed *!*/
-/*        z-index: 999;*/
-/*    }*/
-
-/*    .navbar a {*/
-/*        padding: 15px;  !* adjust as needed *!*/
-/*        display: block;*/
-/*        border-bottom: 1px solid #ccc;  !* adjust as needed *!*/
-/*    }*/
-/*}*/
+@media(min-width: 769px) {
+    .navbar {
+        display: flex;
+    }
+}

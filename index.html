@@ -14,9 +14,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Varela+Round&display=swap" rel="stylesheet">
         <!--Boxicon Link-->
-        <link rel="stylesheet"
-              href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
 
@@ -24,11 +23,8 @@
         <header class="header">
             <a href="#" class="logo">Vincent.</a>
 
-            <button class="hamburger" id="menu-btn">
-                <div class="bx bx-menu" id="menu"></div>
-            </button>
 
-            <nav class="navbar">
+            <nav class="navbar" id="navbar">
                 <a href="#home" class="active">Home</a>
                 <a href="#about">About</a>
                 <a href="#education">Journey</a>
@@ -37,7 +33,13 @@
                 <a href="#contact">Contact</a>
 
                 <span class="active-nav"></span>
+
             </nav>
+
+            <button class="hamburger" id="menu-btn">
+                <img src="img/menu-4-24.png">
+
+            </button>
         </header>
 
         <!--Home section starts-->
@@ -412,12 +414,16 @@
             const navbar = document.getElementById('navbar');
 
             menuBtn.addEventListener('click', function() {
-                if (navbar.style.display === "none" || navbar.style.display === "") {
-                    navbar.style.display = "block";
+                if (navbar.classList.contains('open')) {
+                    navbar.classList.remove('open');
                 } else {
-                    navbar.style.display = "none";
+                    navbar.classList.add('open');
                 }
             });
+
+
+
+
 
         </script>
     </body>
