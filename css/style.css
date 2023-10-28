@@ -120,6 +120,12 @@ section {
     -webkit-background-size: clamp(100px, 40%, 1000px) auto;
 }
 
+@media (min-width: 1700px) {
+    .home {
+        background-position: 82% center; /* or you can use specific px values if needed */
+    }
+}
+
 .home-text {
     max-width: 60rem;
     z-index: 99;
@@ -1038,4 +1044,121 @@ form {
     .navbar {
         display: flex;
     }
+}
+
+@media(min-width: 1900px) {
+    .project img {
+        max-width: 22%;
+    }
+
+    .project .proj2 {
+        max-width: 22%;
+    }
+}
+
+footer {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-top: 1px solid var(--second-bg-color);
+}
+
+footer p {
+    font-size: 1.5rem;
+    flex-grow: 1;
+    text-align: center;
+}
+
+footer button {
+    background-color: #121212;
+    color: white;
+    font-size: 3rem;
+    margin-right: 15rem;
+    margin-left: -15rem;
+    background-color: var(--second-bg-color);
+    border-radius: 10%;
+    width: 5rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+footer button:hover {
+    background-color: var(--main-color); /* Changes background to the gold color */
+    transform: scale(1.1); /* Slightly enlarges the button */
+}
+
+footer button:hover i {
+    color: var(--bg-color); /* Changes icon color to the almost black color for contrast */
+}
+footer button i {
+    color: white;
+}
+
+/* Tablets (Portrait) */
+@media (min-width: 500px) {
+    footer {
+        height: 60px; /* Reduced for smaller screens */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        border-top: 1px solid var(--second-bg-color);
+    }
+    footer p {
+        font-size: 1.2rem; /* Reduced font size for smaller screens */
+        flex-grow: 1;
+        text-align: center;
+        margin: 0 1rem;
+    }
+    footer button {
+        background-color: var(--second-bg-color);
+        color: white;
+        font-size: 2.5rem;
+        margin-right: 1rem;
+        margin-left: -1rem;
+        border-radius: 10%;
+        width: 4rem;
+    }
+
+    footer button i {
+        color: white;
+    }
+}
+
+/* Tablets (Landscape) & Smaller Desktops/Laptops */
+@media (min-width: 900px) {
+    footer {
+        height: 70px; /* Increased height */
+    }
+    footer p {
+        font-size: 1.4rem; /* Increase font size */
+    }
+    footer button {
+        font-size: 3.2rem; /* Increase icon size */
+        width: 4.8rem; /* Slightly increased button width */
+        margin-right: 7rem; /* Adjusted margin for this view */
+        margin-left: -7rem; /* Adjusted margin for this view */
+    }
+}
+
+/* Larger Desktops */
+@media (min-width: 1200px) {
+    footer {
+        height: 75px; /* Restore to original height */
+    }
+    footer p {
+        font-size: 1.5rem; /* Restore to original font size */
+    }
+    footer button {
+        font-size: 3rem; /* Restore to original icon size */
+        width: 5rem; /* Restore to original button width */
+        margin-right: 15rem; /* Restore to original right margin */
+        margin-left: -15rem; /* Restore to original left margin */
+    }
+}
+
+@media (min-width: 1700px) {
+
 }
