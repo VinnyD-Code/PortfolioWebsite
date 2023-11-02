@@ -331,6 +331,15 @@
             </div>
         </section>
 
+        <!-- Popup after submitting form -->
+        <div id="submission-popup" class="popup-container" style="display: none;">
+            <div class="popup">
+                <h2>Thank You!</h2>
+                <p>Your message has been sent successfully.</p>
+                <button id="close-popup">Close</button>
+            </div>
+        </div>
+
 
         <!-- Footer Starts Here -->
         <footer>
@@ -440,6 +449,33 @@
                 });
             });
 
+            document.addEventListener('DOMContentLoaded', function() {
+                // Get the form element
+                var form = document.querySelector('form');
+
+                // Listen for the form submission
+                form.addEventListener('submit', function(e) {
+                    // Prevent the default form submission
+                    e.preventDefault();
+
+                    // Show the popup
+                    document.getElementById('submission-popup').style.display = 'flex';
+
+                    // Here you would typically submit the form via AJAX to Formspree
+                    // and handle the response to show success or error in the popup
+
+                    // For demonstration, we'll simulate form submission with a timeout
+                    setTimeout(function() {
+                        // Simulate a successful submission
+                        console.log('Form submitted!');
+                    }, 1000);
+                });
+
+                // Close popup button functionality
+                document.getElementById('close-popup').addEventListener('click', function() {
+                    document.getElementById('submission-popup').style.display = 'none';
+                });
+            });
         </script>
 
     </body>
