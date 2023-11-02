@@ -308,7 +308,7 @@
             <div class="contact-container">
                 <p>If you have any questions or would just like to chat, please feel free to contact me using the form below.</p>
 
-                <form action="https://formspree.io/f/mknleoov" method="POST" class="grid-form">
+                <form id="contact-form" method="POST" class="grid-form">
                     <div class="form-group">
                         <input type="text" name="fname" placeholder="First Name" required>
                     </div>
@@ -450,33 +450,41 @@
             });
 
             document.addEventListener('DOMContentLoaded', function() {
-                // Get the form element
-                var form = document.querySelector('form');
+                // AJAX form submission to Formspree
+                const form = document.getElementById('contact-form'); // Ensure your form has id="contact-form"
+                form.addEventListener('submit', function (e) {
+                    e.preventDefault(); // Prevent the default form submission
+                    const formData = new FormData(form);
 
-                // Listen for the form submission
-                form.addEventListener('submit', function(e) {
-                    // Prevent the default form submission
-                    e.preventDefault();
-
-                    // Show the popup
-                    document.getElementById('submission-popup').style.display = 'flex';
-
-                    // Here you would typically submit the form via AJAX to Formspree
-                    // and handle the response to show success or error in the popup
-
-                    // For demonstration, we'll simulate form submission with a timeout
-                    setTimeout(function() {
-                        // Simulate a successful submission
-                        console.log('Form submitted!');
-                    }, 1000);
+                    fetch(form.action, {
+                        method: 'POST',
+                        body: formData,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    }).then(response => {
+                        if (response.ok) {
+                            // Show your custom popup here
+                            document.getElementById('submission-popup').style.display = 'flex';
+                        } else {
+                            response.json().then(data => {
+                                if (data.errors) {
+                                    // Handle the errors here
+                                    console.log('Errors:', data.errors);
+                                }
+                            });
+                        }
+                    }).catch(error => {
+                        // Handle any other errors here
+                        console.log('Fetch error:', error);
+                    });
                 });
 
-                // Close popup button functionality
-                document.getElementById('close-popup').addEventListener('click', function() {
+                // Close popup functionality
+                document.getElementById('close-popup').addEventListener('click', function () {
                     document.getElementById('submission-popup').style.display = 'none';
                 });
             });
         </script>
-
     </body>
 </html>
