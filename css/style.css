@@ -1008,7 +1008,35 @@ form {
     background-color:transparent;
 }
 
+@media (max-width: 300px) {
+    .hamburger {
+        display: block;
+    }
 
+    .navbar {
+        /*display: none;*/
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: -20%;
+        left: 0;
+        z-index: 999;
+        backdrop-filter: blur(5px);
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-out;
+    }
+
+    .navbar.open {
+        transform: translateY(20%); /* Bring the navbar back on-screen */
+    }
+
+
+    .navbar a {
+        padding: 15px;  /* adjust as needed */
+        display: block;
+        border-bottom: 1px solid #ccc;  /* adjust as needed */
+    }
+}
 
 @media (max-width: 768px) {
     .hamburger {
@@ -1094,6 +1122,8 @@ footer button:hover i {
 footer button i {
     color: white;
 }
+
+
 
 /* Tablets (Portrait) */
 @media (min-width: 500px) {
